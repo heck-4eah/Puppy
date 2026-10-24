@@ -4,7 +4,7 @@ const words = document.getElementById("words");
 
 const screen = {
   drawRect(x, y, width, height) {
-    context.strokeRect(x, y, width, height);
+    context.strokeRect(12, 13, 20, 10);
   }
 };
 
@@ -17,8 +17,9 @@ function say(message) {
 
 screen.drawRect(12, 14, 300, 100);
 
-say("don't you want some cake? iz tasty");
+say("don't you want some cake? it's tasty");
 
 const cake = say("awooooo!");
 say(cake);
-say("idk what I'm doing!");
+say("welcome to Puppy! you will receive boxicus the rectangle dog!");
+//this code is impossible to see for me. so if someone can see it, please let me know.
