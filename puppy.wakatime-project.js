@@ -25,7 +25,7 @@ if(keyboard.DOWN){
 
 }
   var bwoski = new boxicus()
-  var blank= new potat()
+ 
 
 update = function() {
   bwoski.move()
@@ -35,14 +35,9 @@ draw = function() {
   bwoski.draw()
   blank.draw()
 }
-var potat = function() {
-   this.x = 2
-  this.y = 2
-  this.width = 100
-  this.height = 100
-
-}
-potat.prototype.draw = function() {
-
-  screen.drawRect(this.x, this.y, this.width, this.height)
-}
+//this is fun to make :3
+//how do I do the 8 hours I need in 6 hours?!
+//rip free *expesive object name*... I shoulda done more yesterday..
+//this game is not getting any more updates...
+//but, wait! i might be able to continue the challange!
+//yay!
