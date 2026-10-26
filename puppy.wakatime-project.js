@@ -70,7 +70,10 @@ draw = function() {
   bwoski.draw()
   bubski.draw()
   screen.drawRect(0, -60, 248, 100, "RGB(55,122,202)")
-  screen.fillRect(0, -60, 300, 110, "RGB(55,122,202)") 
+  screen.fillRect(0, -60, 3000, 110, "RGB(55,122,202)") 
+  screen.fillRect(12,12,50,66,"RGB(240,234,214)")
+  screen.fillRect(12,12,36,52, "RGB(194,24,7)")
+  screen.drawText("🔥",12,7,20)
 }
 //this is fun to make :3
 //how do I do the 8 hours I need in 6 hours?!
@@ -82,27 +85,8 @@ draw = function() {
 //blah blah blah woooooooorrrrrrddddssssssssssss
 screen.drawText("invisible words! yay! woo hoo! yipeeeeeeee! more invisible words!", 0,30,50, "RGB(30,90,120)")
 var hot_sauce = function() {
-  this.x = 50
-  this.y = 50
-  this.width = 20
-  this.height = 20
-}
-hot_sauce.prototype.draw = function() {
-  screen.drawRect(this.x, this.y, this.width, this.height)
+  screen.drawRect(14,14,80,29,"RGB(240,234,214)")
+  screen.drawRect(12,12,36,52, "RGB(194,24,7)")
+
 
 }
-hot_sauce.prototype.move = function() {
-  if(keyboard.LEFT){
-    this.x -= 5
-  }
-  if(keyboard.RIGHT){
-    this.x += 5
-  }
-  if(keyboard.UP){
-    this.y += 5
-  }
-  if(keyboard.DOWN){
-    this.y -= 5
-  }
-}
-var spicy = new hot_sauce()
