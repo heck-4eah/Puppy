@@ -1,4 +1,4 @@
-var boxicus = function (){
+  var boxicus = function() {
   this.x = 5
   this.y = 12
   this.width = 15
@@ -7,7 +7,10 @@ var boxicus = function (){
  boxicus.prototype.draw = function() { 
 screen.drawRect(this.x, this.y, this.width, this.height)
 screen.drawLine(this.x + 7, this.y - 15, this.x + this.x + 13, this.y - 8, "RGB(122,129,222)")
-}
+screen.drawRoundRect(this.x -1, this.y +20, this.width +20, this.height -20, 5, "RGB(122,129,222)")
+screen.drawQuadCurve(this.x, this.y +14,1,1, this.width, this.height)
+   
+ }
  boxicus.prototype.move = function() {
 if(keyboard.LEFT){
   this.x -= 5
@@ -32,10 +35,12 @@ var bep = function (){
   this.width = 25
   this.height = 40
 }
- bep.prototype.draw = function() { 
+bep.prototype.draw = function() { 
 screen.drawRect(this.x, this.y, this.width, this.height)
 screen.drawLine(this.x +3, this.y - 19, this.x + this.x + 23, this.y - 18, "RGB(12,19,382)")
-}
+screen.drawRoundRect(this.x -1, this.y +28, this.width +10, this.height -23, 5, "RGB(122,129,222)")
+screen.drawQuadCurve(this.x-1, this.y +20,1,3, this.width -4, this.height -10)
+   }
  bep.prototype.move = function() {
 if(keyboard.LEFT){
   this.x -= 5
@@ -74,3 +79,30 @@ draw = function() {
 //but, wait! i might be able to continue the challange!
 //yay!
 // according to google I can!
+//blah blah blah woooooooorrrrrrddddssssssssssss
+screen.drawText("invisible words! yay! woo hoo! yipeeeeeeee! more invisible words!", 0,30,50, "RGB(30,90,120)")
+var hot_sauce = function() {
+  this.x = 50
+  this.y = 50
+  this.width = 20
+  this.height = 20
+}
+hot_sauce.prototype.draw = function() {
+  screen.drawRect(this.x, this.y, this.width, this.height)
+
+}
+hot_sauce.prototype.move = function() {
+  if(keyboard.LEFT){
+    this.x -= 5
+  }
+  if(keyboard.RIGHT){
+    this.x += 5
+  }
+  if(keyboard.UP){
+    this.y += 5
+  }
+  if(keyboard.DOWN){
+    this.y -= 5
+  }
+}
+var spicy = new hot_sauce()
